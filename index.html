@@ -125,6 +125,29 @@
     color:var(--slate);
   }
 
+  /* collapsible sections (accordion) */
+  details.section > summary.eyebrow{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+  }
+  details.section > summary.eyebrow::-webkit-details-marker{display:none}
+  details.section > summary.eyebrow::after{
+    content:"+";
+    font-family:var(--mono);
+    font-size:1rem;
+    font-weight:400;
+    color:var(--slate);
+    transition:color .2s ease;
+  }
+  details.section[open] > summary.eyebrow::after{content:"\2013"}
+  details.section > summary.eyebrow:hover::after,
+  details.section > summary.eyebrow:focus-visible::after{color:var(--navy)}
+  details.section[open] > summary.eyebrow{margin-bottom:0.4rem}
+
   /* writing index */
   .piece{
     padding:1.7rem 0;
@@ -175,6 +198,27 @@
   .tool-links a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
   .tool-links a:hover,.tool-links a:focus-visible{border-color:var(--navy)}
   .tool-links .muted{color:var(--slate)}
+  /* mobile "read more": JS clamps long tool-takes and adds the toggle */
+  .tool-take.clamped{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:5;
+    line-clamp:5;
+    overflow:hidden;
+  }
+  .read-more{
+    margin-top:0.6rem;
+    font-family:var(--mono);
+    font-size:0.76rem;
+    letter-spacing:0.02em;
+    color:var(--navy);
+    background:none;
+    border:none;
+    border-bottom:1px solid var(--line);
+    padding:0 0 1px;
+    cursor:pointer;
+  }
+  .read-more:hover,.read-more:focus-visible{border-color:var(--navy)}
 
   /* footer */
   footer{
@@ -220,8 +264,8 @@
     <img class="headshot rise d2" alt="Natalie Holly Purviance" src="./headshot.jpg">
   </header>
 
-  <section class="build" aria-labelledby="build-label">
-    <p class="eyebrow" id="build-label">what I build</p>
+  <details class="section build" id="build-section">
+    <summary class="eyebrow">what I build</summary>
     <p class="build-intro">I build the AI tools I write about, so I can explain them from the inside. Each one is small, tied to a real workflow, and built to keep a human in the loop, so judgment and responsibility stay with a person.</p>
 
     <div class="tool">
@@ -250,10 +294,10 @@
       <p class="tool-links"><span class="muted">private, no link</span></p>
     </div>
 
-  </section>
+  </details>
 
-  <section aria-labelledby="writing-label">
-    <p class="eyebrow rise d4" id="writing-label">selected work</p>
+  <details class="section">
+    <summary class="eyebrow rise d4">selected work</summary>
 
     <!-- ============================================================
          TO ADD A PIECE: copy one <article class="piece"> block below
@@ -312,17 +356,17 @@
       </p>
     </article>
 
-  </section>
+  </details>
 
-  <section aria-labelledby="initiatives-label">
-    <p class="eyebrow" id="initiatives-label">initiatives</p>
+  <details class="section">
+    <summary class="eyebrow">initiatives</summary>
 
     <div class="tool">
       <p class="tool-stack">founder · conversation series · in development</p>
       <p class="tool-name">Humans in the Loop, Atlanta</p>
       <p class="tool-take">A quarterly, invitation-only conversation series on AI, media, and the people working at the uncomfortable intersection of the two. Each session opens with a 15-minute provocation, then hands the room to an off-the-record conversation among newsroom leaders, researchers, and Atlanta's international community.</p>
     </div>
-  </section>
+  </details>
 
   <footer>
     <span>updated july 2026</span>
@@ -330,5 +374,66 @@
   </footer>
 
 </main>
+
+<script>
+  // Progressive enhancement: on narrow (mobile) screens, clamp the long
+  // "what I build" descriptions to 5 lines and add a Read more / Read less
+  // toggle — but only on paragraphs that actually overflow. With JS off, or
+  // on wider screens, every description shows in full.
+  (function () {
+    var MOBILE = "(max-width: 640px)";
+    var takes = Array.prototype.slice.call(
+      document.querySelectorAll(".build .tool-take")
+    );
+
+    function apply() {
+      var isMobile = window.matchMedia(MOBILE).matches;
+      takes.forEach(function (p) {
+        var btn = p.__moreBtn;
+        if (!btn) {
+          btn = document.createElement("button");
+          btn.className = "read-more";
+          btn.type = "button";
+          btn.addEventListener("click", function () {
+            var clamped = p.classList.toggle("clamped");
+            btn.textContent = clamped ? "Read more" : "Read less";
+          });
+          p.parentNode.insertBefore(btn, p.nextSibling);
+          p.__moreBtn = btn;
+        }
+        if (!isMobile) {
+          p.classList.remove("clamped");
+          btn.hidden = true;
+          return;
+        }
+        // Mobile: clamp, then reveal the toggle only if the text is truncated.
+        p.classList.add("clamped");
+        btn.textContent = "Read more";
+        if (p.scrollHeight > p.clientHeight + 1) {
+          btn.hidden = false;
+        } else {
+          p.classList.remove("clamped");
+          btn.hidden = true;
+        }
+      });
+    }
+
+    apply();
+    var t;
+    window.addEventListener("resize", function () {
+      clearTimeout(t);
+      t = setTimeout(apply, 150);
+    });
+
+    // The descriptions live in a collapsed <details>, so they can't be measured
+    // until the section opens — re-run then.
+    var build = document.getElementById("build-section");
+    if (build) {
+      build.addEventListener("toggle", function () {
+        if (build.open) apply();
+      });
+    }
+  })();
+</script>
 </body>
 </html>
