@@ -7,25 +7,25 @@
 <!-- keep this site out of search engines: reachable only via the direct link -->
 <meta name="robots" content="noindex, nofollow">
 
-<title>Natalie Holly Purviance, content writer</title>
-<meta name="description" content="Content writer and AI product builder. I write about complex, technical things clearly, and I build the tools I write about.">
+<title>Natalie Holly Purviance, journalist and civic technologist</title>
+<meta name="description" content="Investigative journalist and civic technologist based in Atlanta. I report on accountability and build the AI tools I write about, keeping a human in the loop.">
 
 <!-- og-image.png (the link-preview thumbnail) is optional; if you don't
      upload one to the same folder, the link just previews without an image. -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Natalie Holly Purviance, content writer">
-<meta property="og:description" content="Content writer and AI product builder. I write about complex, technical things clearly, and I build the tools I write about.">
+<meta property="og:title" content="Natalie Holly Purviance, journalist and civic technologist">
+<meta property="og:description" content="Investigative journalist and civic technologist based in Atlanta. I report on accountability and build the AI tools I write about, keeping a human in the loop.">
 <meta property="og:url" content="https://nhpportfolio.github.io">
 <meta property="og:image" content="https://nhpportfolio.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Natalie Holly Purviance, content writer">
-<meta name="twitter:description" content="Content writer and AI product builder. I write about complex, technical things clearly, and I build the tools I write about.">
+<meta name="twitter:title" content="Natalie Holly Purviance, journalist and civic technologist">
+<meta name="twitter:description" content="Investigative journalist and civic technologist based in Atlanta. I report on accountability and build the AI tools I write about, keeping a human in the loop.">
 <meta name="twitter:image" content="https://nhpportfolio.github.io/og-image.png">
 
-<!-- on-theme svg favicon: navy tile, serif n -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%231F3A5F'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Georgia,serif'%20font-size='20'%20font-weight='700'%20text-anchor='middle'%20fill='%23FBFBF9'%3En%3C/text%3E%3C/svg%3E">
+<!-- on-theme svg favicon: navy tile, serif n (favicon.svg in repo root) -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -188,6 +188,9 @@
   .piece-take a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
   .piece-take a:hover,.piece-take a:focus-visible{border-color:var(--navy)}
 
+  /* about */
+  .about-text{max-width:38rem;margin-top:1rem;color:#3a3a3a}
+
   /* what I build */
   .build-intro{max-width:38rem;margin-top:1rem;color:#3a3a3a}
   .tool{padding:1.6rem 0;border-top:1px solid var(--line)}
@@ -259,19 +262,24 @@
       <a href="https://www.linkedin.com/in/nataliecholly">linkedin.com/in/nataliecholly</a>
       <span>atlanta, ga · remote</span>
     </nav>
-    <p class="roles rise d4">writer · builder · convener</p>
+    <p class="roles rise d4">journalist · builder · convener</p>
     </div>
     <img class="headshot rise d2" alt="Natalie Holly Purviance" src="./headshot.jpg">
   </header>
 
+  <details class="section">
+    <summary class="eyebrow">About</summary>
+    <p class="about-text">Natalie Holly Purviance is an investigative journalist and civic technologist based in Atlanta. A BA in sociology and anthropology and an MFA in acting from the Actors Studio Drama School at Pace University trained her to observe how systems work and listen closely in high-stakes exchanges, the same formation that drives her investigative reporting and AI tool building. She is an Ida B. Wells Investigative Reporting Fellow, a graduate of the Columbia Lede Program for Data Journalism, and an alumna of the CUNY AI Journalism Lab.</p>
+  </details>
+
   <details class="section build" id="build-section">
-    <summary class="eyebrow">what I build</summary>
+    <summary class="eyebrow">What I Build</summary>
     <p class="build-intro">I build the AI tools I write about, so I can explain them from the inside. Each one is small, tied to a real workflow, and built to keep a human in the loop, so judgment and responsibility stay with a person.</p>
 
     <div class="tool">
       <p class="tool-stack">browser extension · fastapi · chromadb · llm metadata</p>
-      <p class="tool-name">Source governance engine</p>
-      <p class="tool-take">A newsroom's source knowledge lives in individual reporters' heads, notebooks, and inboxes. When a reporter leaves, the relationships and the background too often leave with them, and under-resourced newsrooms, especially, struggle to answer who it has already spoken to or to see when coverage keeps leaning on the same few voices. The source governance engine is a browser sidebar that runs while a reporter works. Highlight a passage, and it reads the text, proposes who the source is and how they were used, and files that to a record the whole newsroom can search. Matching runs on embeddings, so it surfaces related past coverage even when the wording is different, and a confidence score sits on every inference. Each entry is saved only after the reporter confirms it. A second phase opens that vetted record to readers as a question-answering agent grounded in what the newsroom reported.</p>
+      <p class="tool-name">Source Governance Engine</p>
+      <p class="tool-take">A newsroom's source knowledge lives in individual reporters' heads, notebooks, and inboxes. When a reporter leaves, the relationships and the background too often leave with them, and under-resourced newsrooms, especially, struggle to answer who it has already spoken to or to see when coverage keeps leaning on the same few voices. The source governance engine is a browser sidebar that runs while a reporter works. Highlight a passage, and it reads the text, proposes who the source is and how they were used, and files that to a record the whole newsroom can search. Matching runs on embeddings, so it surfaces related past coverage even when the wording is different, and a confidence score sits on every inference. Each entry is saved only after the reporter confirms it. A second phase opens that vetted record to readers as a question-answering agent grounded in what the newsroom reported. In active testing at The Haitian Times.</p>
       <p class="tool-links">
         <a href="lede-capstone.pdf">walkthrough (pdf) &#8599;</a>
         <a href="https://youtu.be/BX8xUbjYhBI">watch the demo &#8599;</a>
@@ -280,7 +288,7 @@
 
     <div class="tool">
       <p class="tool-stack">lovable · claude api</p>
-      <p class="tool-name">Impact generator</p>
+      <p class="tool-name">Impact Generator</p>
       <p class="tool-take">A small newsroom's proof of impact is buried in the stories it already published, and in the real-world outcomes those stories caused. Funders pay for outcomes, and outcomes rarely make it into the published text, so turning the work into funder language is slow and gets dropped first when staff is short. The impact generator takes a newsroom's own coverage, plus an outcome if there is one, and drafts the funder-facing version: a donor note, a grant letter of inquiry, an impact summary. It works only from what the newsroom reported, and it asks for any missing detail. It never invents a number or an outcome, and it never sends.</p>
       <p class="tool-links">
         <a href="https://pixel-perfect-clone-67059.lovable.app">Try it &#8599;</a>
@@ -297,7 +305,7 @@
   </details>
 
   <details class="section">
-    <summary class="eyebrow rise d4">selected work</summary>
+    <summary class="eyebrow rise d4">Selected Work</summary>
 
     <!-- ============================================================
          TO ADD A PIECE: copy one <article class="piece"> block below
@@ -320,21 +328,11 @@
     </article>
 
     <article class="piece">
-      <p class="piece-meta">columbia journalism school (lede program) · 2026 · computational research</p>
+      <p class="piece-meta">columbia journalism school (lede program) · 2025 · computational research</p>
       <p class="piece-title">How 19th-Century Newspapers Gave Voice to America's First Nativist Movement</p>
       <p class="piece-take">A data-driven, scrollytelling piece: I analyzed 3,000 newspaper articles from 1845&#8211;1855 with Python and NLP to trace how the 19th-century press amplified America's first nativist movement.</p>
       <p class="tool-links">
         <a href="https://nhp-2025.github.io/Know-Nothings-Project/">Read &#8599;</a>
-      </p>
-    </article>
-
-    <article class="piece">
-      <p class="piece-meta">wabe (npr/pbs atlanta) · 2024 · video script</p>
-      <p class="piece-title">WABE Cornerstone Society, Laura Barbera</p>
-      <p class="piece-take">A membership campaign video I scripted for WABE's Cornerstone Society, produced in English and Spanish.</p>
-      <p class="tool-links">
-        <a href="https://youtu.be/96hC1tuXrM0">Watch in English &#8599;</a>
-        <a href="https://youtu.be/ly1IiU25e00">Watch in Spanish &#8599;</a>
       </p>
     </article>
 
@@ -349,22 +347,39 @@
 
     <article class="piece">
       <p class="piece-meta">wabe (npr/pbs atlanta) · 2024 · interview &amp; translation</p>
-      <p class="piece-title">Georgia organizations provide emergency relief amid government collapse and years-long crisis in Haiti</p>
+      <p class="piece-title">Georgia Organizations Provide Emergency Relief Amid Government Collapse and Years-Long Crisis in Haiti</p>
       <p class="piece-take">For this WABE report on Georgia organizations mobilizing emergency relief during Haiti's government collapse and humanitarian crisis, I conducted the interview with the main subject, provided translation, and selected the music.</p>
       <p class="tool-links">
         <a href="https://www.wabe.org/georgia-organizations-provide-emergency-relief-amid-government-collapse-and-years-long-crisis-in-haiti/">Listen &#8599;</a>
       </p>
     </article>
 
+    <article class="piece">
+      <p class="piece-meta">the haitian times · 2016 · feature</p>
+      <p class="piece-title" lang="fr">Lutter contre la violence domestique dans la communauté haïtienne</p>
+      <p class="piece-take">A feature co-reported in French with Soraya E. Denis on domestic violence in the Haitian community, and the language and cultural barriers that keep survivors from getting help.</p>
+      <p class="tool-links">
+        <a href="https://haitiantimes.com/fr/2016/03/31/s%27attaquer-%C3%A0-la-violence-domestique-dans-la-communaut%C3%A9-ha%C3%AFtienne/">Read &#8599;</a>
+      </p>
+    </article>
+
+    <!-- in progress (not yet published) -->
+    <article class="piece">
+      <p class="piece-meta">the haitian times · ida b. wells investigative reporting fellowship, 2026 · in progress</p>
+      <p class="piece-title">USAID Caracol Investigation</p>
+      <p class="piece-take">An investigation into USAID's Caracol Northern Industrial Park and post-earthquake jobs programs in Haiti, including an on-record interview with former USAID official Paul Weisenfeld.</p>
+      <p class="tool-links"><span class="muted">in progress, no link yet</span></p>
+    </article>
+
   </details>
 
   <details class="section">
-    <summary class="eyebrow">initiatives</summary>
+    <summary class="eyebrow">Initiatives</summary>
 
     <div class="tool">
-      <p class="tool-stack">founder · conversation series · in development</p>
+      <p class="tool-stack">co-founder · conversation series · in development</p>
       <p class="tool-name">Humans in the Loop, Atlanta</p>
-      <p class="tool-take">A quarterly, invitation-only conversation series on AI, media, and the people working at the uncomfortable intersection of the two. Each session opens with a 15-minute provocation, then hands the room to an off-the-record conversation among newsroom leaders, researchers, and Atlanta's international community.</p>
+      <p class="tool-take">A quarterly, invitation-only conversation series on AI, media, and the people working at the uncomfortable intersection of the two. Each session opens with a 15-minute provocation, then hands the room to an off-the-record conversation among newsroom leaders, researchers, and Atlanta's international community. Co-founded with Aimee Rinehart and Cynthia DuBose.</p>
     </div>
   </details>
 
@@ -378,7 +393,7 @@
 <script>
   // Progressive enhancement: on narrow (mobile) screens, clamp the long
   // "what I build" descriptions to 5 lines and add a Read more / Read less
-  // toggle — but only on paragraphs that actually overflow. With JS off, or
+  // toggle, but only on paragraphs that actually overflow. With JS off, or
   // on wider screens, every description shows in full.
   (function () {
     var MOBILE = "(max-width: 640px)";
@@ -426,7 +441,7 @@
     });
 
     // The descriptions live in a collapsed <details>, so they can't be measured
-    // until the section opens — re-run then.
+    // until the section opens, so re-run then.
     var build = document.getElementById("build-section");
     if (build) {
       build.addEventListener("toggle", function () {
