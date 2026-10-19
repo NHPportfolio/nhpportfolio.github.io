@@ -4,63 +4,44 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- keep this page out of search engines, like the main site: reachable only via the direct link -->
+<!-- keep this site out of search engines: reachable only via the direct link -->
 <meta name="robots" content="noindex, nofollow">
 
-<title>Natalie Holly Purviance, Community Programs and Partnerships</title>
-<meta name="description" content="Atlanta-based program and partnerships lead. Fifteen years running community programs, managing stakeholder relationships, and telling the story of the work, in international development, public media, and the arts.">
+<title>Natalie Holly Purviance, journalist and civic technologist</title>
+<meta name="description" content="Investigative journalist and civic technologist based in Atlanta. I report on accountability and build the AI tools I write about, keeping a human in the loop.">
 
+<!-- og-image.png (the link-preview thumbnail) is optional; if you don't
+     upload one to the same folder, the link just previews without an image. -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Natalie Holly Purviance, Community Programs and Partnerships">
-<meta property="og:description" content="Fifteen years running community programs, managing stakeholder relationships, and telling the story of the work. Atlanta, GA.">
-<meta property="og:url" content="https://nhpportfolio.github.io/impact/">
-<meta property="og:image" content="https://nhpportfolio.github.io/impact/og-image.png">
+<meta property="og:title" content="Natalie Holly Purviance, journalist and civic technologist">
+<meta property="og:description" content="Investigative journalist and civic technologist based in Atlanta. I report on accountability and build the AI tools I write about, keeping a human in the loop.">
+<meta property="og:url" content="https://nhpportfolio.github.io">
+<meta property="og:image" content="https://nhpportfolio.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Natalie Holly Purviance: Community Programs, Partnerships, and Storytelling. Atlanta, GA.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Natalie Holly Purviance, Community Programs and Partnerships">
-<meta name="twitter:description" content="Fifteen years running community programs, managing stakeholder relationships, and telling the story of the work. Atlanta, GA.">
-<meta name="twitter:image" content="https://nhpportfolio.github.io/impact/og-image.png">
+<meta name="twitter:title" content="Natalie Holly Purviance, journalist and civic technologist">
+<meta name="twitter:description" content="Investigative journalist and civic technologist based in Atlanta. I report on accountability and build the AI tools I write about, keeping a human in the loop.">
+<meta name="twitter:image" content="https://nhpportfolio.github.io/og-image.png">
 
-<!-- svg favicon: navy tile, serif n -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<!-- on-theme svg favicon: navy tile, serif n (favicon.svg in repo root) -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
   :root{
     --paper:#FBFBF9;
     --ink:#1A1A1A;
-    --body:#3A3A3A;
     --navy:#1F3A5F;
-    --slate:#5F626A;
+    --slate:#6B6E76;
     --line:#E4E3DE;
-    --tint:#F2F1EC;
     --serif:"Fraunces",Georgia,"Times New Roman",serif;
     --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
     --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
-    color-scheme:light;
   }
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){
-      --paper:#14161A;
-      --ink:#ECEBE6;
-      --body:#C9C8C2;
-      --navy:#9DB8DC;
-      --slate:#9A9DA5;
-      --line:#2C2F35;
-      --tint:#1C1F24;
-      color-scheme:dark;
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#14161A;--ink:#ECEBE6;--body:#C9C8C2;--navy:#9DB8DC;
-    --slate:#9A9DA5;--line:#2C2F35;--tint:#1C1F24;color-scheme:dark;
-  }
-
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
   body{
@@ -75,150 +56,192 @@
   .wrap{
     max-width:44rem;
     margin:0 auto;
-    padding:clamp(3rem,8vw,6rem) 1rem 4rem;
+    padding:clamp(3rem,8vw,6rem) 1.5rem 4rem;
   }
-  @media (min-width:480px){.wrap{padding-left:1.5rem;padding-right:1.5rem}}
-
-  a{color:var(--navy)}
 
   /* hero */
   .head-row{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:1.6rem 2rem}
   .head-text{flex:1 1 18rem;min-width:0}
   .headshot{flex:0 0 auto;width:clamp(96px,22vw,132px);aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-  .name{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,7vw,3.6rem);line-height:1.02;letter-spacing:-0.01em}
-  .tagline{margin-top:1.1rem;font-weight:600;font-size:clamp(1.15rem,2.6vw,1.45rem)}
-  .lead{margin-top:1.1rem;max-width:34rem;font-size:clamp(1.05rem,2.4vw,1.2rem)}
-  .roles{margin-top:1.6rem;font-family:var(--mono);font-size:0.72rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--slate)}
-  .roles::before{content:"";display:block;width:2.2rem;height:2px;background:var(--navy);margin-bottom:1rem}
+  .name{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(2.4rem,7vw,3.6rem);
+    line-height:1.02;
+    letter-spacing:-0.01em;
+  }
+  .tagline{
+    margin-top:1.1rem;
+    font-weight:600;
+    font-size:clamp(1.15rem,2.6vw,1.45rem);
+    color:var(--ink);
+  }
+  .lead{
+    margin-top:1.1rem;
+    max-width:34rem;
+    font-size:clamp(1.05rem,2.4vw,1.2rem);
+    color:var(--ink);
+  }
+  .contact{
+    margin-top:1.6rem;
+    font-family:var(--mono);
+    font-size:0.82rem;
+    letter-spacing:0.01em;
+    color:var(--slate);
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.4rem 0.9rem;
+  }
+  .contact a{color:var(--slate);text-decoration:none;border-bottom:1px solid var(--line)}
+  .contact a:hover{color:var(--navy);border-color:var(--navy)}
+  .roles{
+    margin-top:1.6rem;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    font-weight:500;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--slate);
+  }
+  .roles::before{
+    content:"";
+    display:block;
+    width:2.2rem;
+    height:2px;
+    background:var(--navy);
+    margin-bottom:1rem;
+  }
 
   /* section label */
   .eyebrow{
-    margin-top:3.6rem;padding-top:1.1rem;border-top:1px solid var(--line);
-    font-family:var(--mono);font-size:0.72rem;font-weight:500;letter-spacing:0.16em;
-    text-transform:uppercase;color:var(--slate);
+    margin-top:3.6rem;
+    padding-top:1.1rem;
+    border-top:1px solid var(--line);
+    font-family:var(--mono);
+    font-size:0.72rem;
+    font-weight:500;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--slate);
   }
 
+  /* collapsible sections (accordion) */
+  details.section > summary.eyebrow{
+    list-style:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+  }
+  details.section > summary.eyebrow::-webkit-details-marker{display:none}
+  details.section > summary.eyebrow::after{
+    content:"+";
+    font-family:var(--mono);
+    font-size:1rem;
+    font-weight:400;
+    color:var(--slate);
+    transition:color .2s ease;
+  }
+  details.section[open] > summary.eyebrow::after{content:"\2013"}
+  details.section > summary.eyebrow:hover::after,
+  details.section > summary.eyebrow:focus-visible::after{color:var(--navy)}
+  details.section[open] > summary.eyebrow{margin-bottom:0.4rem}
 
-
-  /* proof strip */
-  .proof{list-style:none;margin-top:1.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));gap:0.75rem}
-  .proof li{background:var(--tint);border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem}
-  .proof .num{display:block;font-family:var(--serif);font-weight:500;font-size:1.9rem;line-height:1.05;color:var(--navy)}
-  .proof .what{display:block;margin-top:0.4rem;font-size:0.92rem;line-height:1.45;color:var(--body)}
-  .shot{max-width:22rem;background:#fbfaf7}
-
-  .contact{margin-top:1.6rem;font-family:var(--mono);font-size:0.82rem;letter-spacing:0.01em;color:var(--slate);display:flex;flex-wrap:wrap;gap:0.4rem 0.9rem}
-  .contact a{color:var(--slate);text-decoration:none;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
-  .contact a:hover{color:var(--navy);border-color:var(--navy)}
-  /* case studies */
-  .case{padding:1.7rem 0;border-top:1px solid var(--line)}
-  .case:first-of-type{border-top:none}
-  .case-title{margin:0.5rem 0 0.6rem;font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,3.2vw,1.6rem);line-height:1.18}
-  .case dl{display:grid;grid-template-columns:auto 1fr;gap:0.35rem 1rem;max-width:38rem}
-  .case dt{font-family:var(--mono);font-size:0.74rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--slate);padding-top:0.22rem}
-  .case dd{color:var(--body)}
-  @media (max-width:479px){.case dl{grid-template-columns:1fr;gap:0.1rem}.case dd{margin-bottom:0.55rem}}
-  /* plain lists */
-  .items{list-style:none;margin-top:1rem;max-width:38rem}
-  .items li{padding:0.85rem 0;border-top:1px solid var(--line);color:var(--body)}
-  .items li:first-child{border-top:none}
-  .items strong{color:var(--ink);font-weight:600}
-
-  /* tools */
-  .section-note{margin-top:0.9rem;max-width:38rem;color:var(--body)}
-  .tool-grid{display:grid;grid-template-columns:1fr;gap:2rem 1.5rem;margin-top:1.4rem}
-  @media (min-width:640px){.tool-grid{grid-template-columns:1fr 1fr}}
-  .tool-card .meta{margin-top:0.9rem}
-  .card-title{margin:0.4rem 0 0.35rem;font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1.2}
-  .card-media{position:relative;aspect-ratio:16/10;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:var(--tint)}
-  .card-media .yt{margin:0;border:0;border-radius:0;aspect-ratio:auto;position:absolute;inset:0}
-  .shot-link{position:absolute;inset:0;display:block;background:#fbfaf7}
-  .shot-link img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .4s ease}
-  .shot-link:hover img{transform:scale(1.03)}
-  .illo{display:block;width:100%;height:100%}
-  .i-bg{fill:var(--tint)}
-  .i-phone{fill:var(--paper);stroke:var(--line);stroke-width:2}
-  .i-in{fill:var(--tint);stroke:var(--line)}
-  .i-out{fill:var(--navy)}
-  .i-wave rect{fill:var(--paper)}
-  .i-t{font-family:var(--sans);font-size:9.5px;fill:var(--ink)}
-  .i-tw{font-family:var(--mono);font-size:9px;fill:var(--paper)}
-  .i-cap{font-family:var(--mono);font-size:10px;fill:var(--slate)}
-  .i-node rect{fill:var(--paper);stroke:var(--line);stroke-width:1.5}
-  .i-arrow path,.i-ico path,.i-ico rect,.i-ico circle{fill:none;stroke:var(--navy);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .i-lab{font-family:var(--sans);font-size:10.5px;fill:var(--ink)}
-
-  /* engine deep dive */
-  .deep{margin-top:2.4rem;padding:1.6rem 1.4rem;border:1px solid var(--line);border-radius:12px;background:var(--tint)}
-  @media (max-width:479px){.deep{padding:1.2rem 1rem}}
-  .deep-title{margin:1.8rem 0 0.8rem;font-family:var(--serif);font-weight:500;font-size:1.25rem}
-  .deep .meta + .deep-title{margin-top:0.5rem}
-  .steps{list-style:none;display:grid;grid-template-columns:1fr;gap:0.75rem}
-  @media (min-width:640px){.steps{grid-template-columns:repeat(3,1fr)}}
-  .steps li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:1rem;font-size:0.92rem;line-height:1.5;color:var(--body)}
-  .steps strong{display:block;margin-bottom:0.35rem;color:var(--ink);font-weight:600}
-  .steps .n{float:left;margin-right:0.5rem;font-family:var(--serif);font-size:1.3rem;line-height:1;color:var(--navy)}
-  .deep-lead{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--ink)}
-  .versus{display:grid;grid-template-columns:1fr;gap:0.75rem;margin-top:0.9rem}
-  @media (min-width:560px){.versus{grid-template-columns:1fr 1fr}}
-  .vs-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:1rem;font-size:0.92rem;line-height:1.5;color:var(--body)}
-  .vs-win{border-color:var(--navy)}
-  .vs-num{font-family:var(--serif);font-size:2.6rem;line-height:1.1;margin:0.3rem 0;color:var(--ink)}
-  .vs-win .vs-num{color:var(--navy)}
-  .deep-note{margin-top:0.9rem;font-size:0.92rem;font-style:italic;color:var(--body)}
-  .ethics{padding-left:1.3rem;display:grid;gap:0.7rem;font-size:0.94rem;line-height:1.55;color:var(--body)}
-  .ethics strong{color:var(--ink);font-weight:600}
-  .ethics li::marker{color:var(--navy);font-family:var(--serif)}
-
-  /* samples */
-  .meta{font-family:var(--mono);font-size:0.74rem;letter-spacing:0.03em;color:var(--slate);text-transform:uppercase}
-  .piece{padding:1.4rem 0;border-top:1px solid var(--line)}
+  /* writing index */
+  .piece{
+    padding:1.7rem 0;
+    border-top:1px solid var(--line);
+  }
   .piece:first-of-type{border-top:none}
-  .piece-title{
-    display:inline-block;margin:0.45rem 0 0.35rem;font-family:var(--serif);font-weight:500;
-    font-size:clamp(1.2rem,3vw,1.45rem);line-height:1.2;color:var(--ink);text-decoration:none;
-    background-image:linear-gradient(var(--navy),var(--navy));background-size:0% 1px;
-    background-position:0 100%;background-repeat:no-repeat;transition:background-size .3s ease,color .2s ease;
+  .piece-meta{
+    font-family:var(--mono);
+    font-size:0.74rem;
+    letter-spacing:0.03em;
+    color:var(--slate);
+    text-transform:uppercase;
   }
-  a.piece-title:hover,a.piece-title:focus-visible{color:var(--navy);background-size:100% 1px}
-  .piece-take{max-width:36rem;color:var(--body)}
-  .clip{display:block;width:100%;height:auto;margin-top:1rem;border-radius:10px;border:1px solid var(--line);background:#000}
-  h3.piece-title{display:block}
-  .media-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem}
-  @media (min-width:640px){.media-grid{grid-template-columns:1fr 1fr}}
-  .media-grid figure{margin:0}
-  .media-grid .clip,.media-grid .yt{margin-top:0}
-  figcaption{margin-top:0.45rem;font-family:var(--mono);font-size:0.74rem;color:var(--slate)}
-  figcaption a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
-  .yt{position:relative;margin-top:1rem;aspect-ratio:16/9;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#000}
-  .yt-link,.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-  .yt img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease,opacity .2s ease}
-  .yt-link:hover img,.yt-link:focus-visible img{transform:scale(1.03);opacity:.9}
-  .play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(20,22,26,.78)}
-  .play::after{content:"";position:absolute;left:26px;top:20px;border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff}
-  .audio-card{display:flex;align-items:center;gap:0.9rem;margin-top:1rem;padding:1rem 1.2rem;border:1px solid var(--line);border-radius:10px;background:var(--tint);color:var(--navy);text-decoration:none;font-size:0.92rem;line-height:1.4}
-  .audio-card span{color:var(--body)}
-  .audio-card strong{color:var(--navy);font-weight:600}
-  .audio-card:hover,.audio-card:focus-visible{border-color:var(--navy)}
-  .photo-link{position:relative;display:block;margin-top:1rem;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
-  .photo{display:block;width:100%;height:auto;transition:transform .4s ease}
-  .photo-link:hover .photo{transform:scale(1.02)}
-  .read-tag{position:absolute;right:0.75rem;bottom:0.75rem;padding:0.3rem 0.6rem;border-radius:6px;background:rgba(20,22,26,.78);color:#fff;font-family:var(--mono);font-size:0.74rem}
-  .clip-links{margin-top:0.6rem;font-family:var(--mono);font-size:0.76rem}
-  .clip-links a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
-  .clip-links a:hover,.clip-links a:focus-visible{border-color:var(--navy)}
+  .piece-title{
+    display:inline-block;
+    margin:0.5rem 0 0.4rem;
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(1.35rem,3.4vw,1.7rem);
+    line-height:1.18;
+    letter-spacing:-0.005em;
+    color:var(--ink);
+    text-decoration:none;
+    background-image:linear-gradient(var(--navy),var(--navy));
+    background-size:0% 1px;
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    transition:background-size .3s ease,color .2s ease;
+  }
+  a.piece-title:hover,a.piece-title:focus-visible{
+    color:var(--navy);
+    background-size:100% 1px;
+  }
+  .piece-take{
+    max-width:36rem;
+    color:#3a3a3a;
+  }
+  .piece-take a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
+  .piece-take a:hover,.piece-take a:focus-visible{border-color:var(--navy)}
 
+  /* about */
+  .about-text{max-width:38rem;margin-top:1rem;color:#3a3a3a}
 
+  /* what I build */
+  .build-intro{max-width:38rem;margin-top:1rem;color:#3a3a3a}
+  .tool{padding:1.6rem 0;border-top:1px solid var(--line)}
+  .tool-stack{font-family:var(--mono);font-size:0.74rem;letter-spacing:0.02em;color:var(--slate)}
+  .tool-name{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,3.2vw,1.6rem);line-height:1.18;margin:0.45rem 0 0.4rem}
+  .tool-take{max-width:38rem;color:#3a3a3a}
+  .tool-links{margin-top:0.7rem;font-family:var(--mono);font-size:0.76rem;display:flex;flex-wrap:wrap;gap:0.3rem 1.1rem}
+  .tool-links a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--line)}
+  .tool-links a:hover,.tool-links a:focus-visible{border-color:var(--navy)}
+  .tool-links .muted{color:var(--slate)}
+  /* mobile "read more": JS clamps long tool-takes and adds the toggle */
+  .tool-take.clamped{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:5;
+    line-clamp:5;
+    overflow:hidden;
+  }
+  .read-more{
+    margin-top:0.6rem;
+    font-family:var(--mono);
+    font-size:0.76rem;
+    letter-spacing:0.02em;
+    color:var(--navy);
+    background:none;
+    border:none;
+    border-bottom:1px solid var(--line);
+    padding:0 0 1px;
+    cursor:pointer;
+  }
+  .read-more:hover,.read-more:focus-visible{border-color:var(--navy)}
+
+  /* footer */
   footer{
-    margin-top:4rem;padding-top:1.2rem;border-top:1px solid var(--line);
-    font-family:var(--mono);font-size:0.76rem;color:var(--slate);
-    display:flex;flex-wrap:wrap;gap:0.4rem 1rem;justify-content:space-between;
+    margin-top:4rem;
+    padding-top:1.2rem;
+    border-top:1px solid var(--line);
+    font-family:var(--mono);
+    font-size:0.76rem;
+    color:var(--slate);
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.4rem 1rem;
+    justify-content:space-between;
   }
   footer a{color:var(--slate);text-decoration:none;border-bottom:1px solid var(--line)}
   footer a:hover{color:var(--navy);border-color:var(--navy)}
 
   :focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:2px}
 
+  /* quiet load motion */
   @media (prefers-reduced-motion:no-preference){
     .rise{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
     .d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}.d4{animation-delay:.29s}
@@ -231,290 +254,201 @@
 
   <header class="head-row">
     <div class="head-text">
-      <h1 class="name rise d1">Natalie Holly Purviance</h1>
-      <p class="tagline rise d2">Community Programs, Partnerships, and Storytelling.</p>
-      <p class="lead rise d3">For fifteen years I have run community programs, managed the partnerships that keep them funded, and told the story of the work so employees, partners, and leadership can see its impact.</p>
-      <nav class="contact rise d4" aria-label="Contact">
-        <a href="mailto:Natalie.C.Holly@gmail.com">natalie.c.holly@gmail.com</a>
-        <a href="https://www.linkedin.com/in/nataliecholly" rel="noopener">linkedin.com/in/nataliecholly</a>
-        <span>atlanta, ga</span>
-      </nav>
-      <p class="roles rise d4">programs · partnerships · storytelling</p>
+    <h1 class="name rise d1">Natalie Holly Purviance</h1>
+    <p class="tagline rise d2">Investigative Journalist and Civic Technologist.</p>
+    <p class="lead rise d3">I write about complex, technical things clearly, and build the tools I write about.</p>
+    <nav class="contact rise d4" aria-label="contact">
+      <a href="mailto:Natalie.C.Holly@gmail.com">natalie.c.holly@gmail.com</a>
+      <a href="https://www.linkedin.com/in/nataliecholly">linkedin.com/in/nataliecholly</a>
+      <span>atlanta, ga · remote</span>
+    </nav>
+    <p class="roles rise d4">journalist · builder · convener</p>
     </div>
-    <img class="headshot rise d2" alt="Portrait of Natalie Holly Purviance" src="../headshot.jpg" width="132" height="132">
+    <img class="headshot rise d2" alt="Natalie Holly Purviance" src="./headshot.jpg">
   </header>
 
-  <section aria-labelledby="glance">
-    <h2 class="eyebrow" id="glance">At a Glance</h2>
-    <ul class="proof">
-      <li><span class="num">$1.3M+</span><span class="what">in funding secured and stewarded: $800K+ in gifts from donors I managed at WABE, $500K+ in grants I wrote at Actor's Express, and a $25K Lilly Endowment–funded grant in 2026</span></li>
-      <li><span class="num">$200K+</span><span class="what">in new revenue I raised at WABE, including corporate sponsorships, while growing giving more than 15%</span></li>
-      <li><span class="num">18</span><span class="what">filmmakers in each cohort of a 15-week program I co-lead, now in its third season</span></li>
-      <li><span class="num">230</span><span class="what">staff who adopted a digital tool whose rollout I proposed and led at Achievement Network</span></li>
-      <li><span class="num">3 yrs</span><span class="what">USAID Communications Lead on an international disaster-recovery program, working directly with residents and community groups</span></li>
-      <li><span class="num">EN · FR</span><span class="what">fully bilingual in English and French</span></li>
-    </ul>
-  </section>
+  <details class="section">
+    <summary class="eyebrow">About</summary>
+    <p class="about-text">Natalie Holly Purviance is an investigative journalist and civic technologist based in Atlanta. A BA in sociology and anthropology and an MFA in acting from the Actors Studio Drama School at Pace University trained her to observe how systems work and listen closely in high-stakes exchanges, the same formation that drives her investigative reporting and AI tool building. She is an Ida B. Wells Investigative Reporting Fellow, a graduate of the Columbia Lede Program for Data Journalism, and an alumna of the CUNY AI Journalism Lab.</p>
+  </details>
 
-  <section aria-labelledby="tools">
-    <h2 class="eyebrow" id="tools">Tools I've Built</h2>
-    <p class="section-note">Four AI tools, all built in 2026. Each keeps a person in charge of the final decision.</p>
-    <div class="tool-grid">
+  <details class="section build" id="build-section">
+    <summary class="eyebrow">What I Build</summary>
+    <p class="build-intro">I build the AI tools I write about, so I can explain them from the inside. Each one is small, tied to a real workflow, and built to keep a human in the loop, so judgment and responsibility stay with a person.</p>
 
-      <article class="tool-card">
-        <div class="card-media">
-          <div class="yt" data-id="BX8xUbjYhBI">
-            <a class="yt-link" href="https://www.youtube.com/watch?v=BX8xUbjYhBI" rel="noopener" aria-label="Play video: Source Governance Engine demo">
-              <img src="https://i.ytimg.com/vi/BX8xUbjYhBI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
-              <span class="play" aria-hidden="true"></span>
-            </a>
-          </div>
-        </div>
-        <p class="meta">2026 · In Testing With Two Newsrooms</p>
-        <h3 class="card-title">Source Governance Engine</h3>
-        <p class="piece-take">Organizations lose what they know when people leave. Built for newsrooms, this browser tool records who a team has worked with and how, files it to a shared record anyone on the team can search, and has a person confirm every entry before it is saved.</p>
-      </article>
-
-      <article class="tool-card">
-        <div class="card-media">
-          <a class="shot-link" href="https://pixel-perfect-clone-67059.lovable.app/" rel="noopener" aria-label="Try the Impact Generator">
-            <img src="media/impact-generator.jpg" alt="The Impact Generator drafting form, with fields for a published story, its outcome, the audience and the language" loading="lazy" width="500" height="506">
-            <span class="read-tag">Try it ↗</span>
-          </a>
-        </div>
-        <p class="meta">2026 · Built for 285 South</p>
-        <h3 class="card-title">Impact Generator</h3>
-        <p class="piece-take">Drafts funder-facing impact summaries, donor notes and letters of inquiry from an organization's own published work. It works only from what the organization reported, asks for missing details, never invents a number or an outcome, and never sends anything.</p>
-      </article>
-
-      <article class="tool-card">
-        <div class="card-media">
-          <svg class="illo" viewBox="0 0 400 250" role="img" aria-label="Illustration: job boards feed an AI scorer, which logs matches to a Google Sheet and sends a weekly email">
-          <rect class="i-bg" x="0" y="0" width="400" height="250"/>
-          <g class="i-node"><rect x="18" y="80" width="78" height="70" rx="10"/><rect x="114" y="80" width="78" height="70" rx="10"/><rect x="210" y="80" width="78" height="70" rx="10"/><rect x="306" y="80" width="78" height="70" rx="10"/></g>
-          <g class="i-arrow"><path d="M98 115h12m-5-5 5 5-5 5"/><path d="M194 115h12m-5-5 5 5-5 5"/><path d="M290 115h12m-5-5 5 5-5 5"/></g>
-          <g class="i-ico">
-            <rect x="42" y="96" width="30" height="22" rx="3"/><path d="M42 104h30"/>
-            <circle cx="153" cy="107" r="12"/><path d="M147 107l4 4 8-8"/>
-            <rect x="235" y="95" width="28" height="26" rx="2"/><path d="M235 104h28M235 112h28M249 95v26"/>
-            <rect x="330" y="98" width="30" height="20" rx="2"/><path d="M330 98l15 11 15-11"/>
-          </g>
-          <text class="i-lab" x="57" y="140" text-anchor="middle">Job boards</text>
-          <text class="i-lab" x="153" y="140" text-anchor="middle">Score 1–5</text>
-          <text class="i-lab" x="249" y="140" text-anchor="middle">Log matches</text>
-          <text class="i-lab" x="345" y="140" text-anchor="middle">Weekly email</text>
-          <text class="i-cap" x="200" y="196" text-anchor="middle">Runs every week · Claude scores each posting against the resume</text>
-        </svg>
-        </div>
-        <p class="meta">2026 · Runs Weekly</p>
-        <h3 class="card-title">Job Scraper and Resume Matcher</h3>
-        <p class="piece-take">An AI agent that runs on a weekly schedule, pulls openings from employer job boards, scores each one against a resume, logs the matches to a Google Sheet, and emails a summary.</p>
-      </article>
-
-      <article class="tool-card">
-        <div class="card-media">
-          <svg class="illo" viewBox="0 0 400 250" role="img" aria-label="Illustration: a text-message conversation with Sloane, including a voice-note reply">
-          <rect class="i-bg" x="0" y="0" width="400" height="250"/>
-          <rect class="i-phone" x="125" y="14" width="150" height="236" rx="18"/>
-          <rect class="i-in" x="137" y="40" width="112" height="44" rx="10"/>
-          <text class="i-t" x="145" y="57">Morning. Two meetings</text>
-          <text class="i-t" x="145" y="71">today. What matters most?</text>
-          <rect class="i-out" x="163" y="96" width="100" height="30" rx="10"/>
-          <g class="i-wave"><rect x="173" y="107" width="3" height="8"/><rect x="179" y="104" width="3" height="14"/><rect x="185" y="102" width="3" height="18"/><rect x="191" y="106" width="3" height="10"/><rect x="197" y="103" width="3" height="16"/><rect x="203" y="107" width="3" height="8"/><rect x="209" y="105" width="3" height="12"/><rect x="215" y="108" width="3" height="6"/></g>
-          <text class="i-tw" x="230" y="115">0:14</text>
-          <rect class="i-in" x="137" y="138" width="112" height="30" rx="10"/>
-          <text class="i-t" x="145" y="157">Noted. Check-in at 9 pm.</text>
-          <text class="i-cap" x="200" y="192" text-anchor="middle">SMS · voice notes · calendar</text>
-        </svg>
-        </div>
-        <p class="meta">2026 · Private</p>
-        <h3 class="card-title">Sloane</h3>
-        <p class="piece-take">A coaching system that runs over text message. It reads a person's calendar and notes, sends a short prompt each morning and a reflection each night, and takes replies as voice notes, transcribed with Whisper.</p>
-      </article>
-
+    <div class="tool">
+      <p class="tool-stack">browser extension · fastapi · chromadb · llm metadata</p>
+      <p class="tool-name">Source Governance Engine</p>
+      <p class="tool-take">A newsroom's source knowledge lives in individual reporters' heads, notebooks, and inboxes. When a reporter leaves, the relationships and the background too often leave with them, and under-resourced newsrooms, especially, struggle to answer who it has already spoken to or to see when coverage keeps leaning on the same few voices. The source governance engine is a browser sidebar that runs while a reporter works. Highlight a passage, and it reads the text, proposes who the source is and how they were used, and files that to a record the whole newsroom can search. Matching runs on embeddings, so it surfaces related past coverage even when the wording is different, and a confidence score sits on every inference. Each entry is saved only after the reporter confirms it. A second phase opens that vetted record to readers as a question-answering agent grounded in what the newsroom reported. In active testing at The Haitian Times.</p>
+      <p class="tool-links">
+        <a href="lede-capstone.pdf">walkthrough (pdf) &#8599;</a>
+        <a href="https://youtu.be/BX8xUbjYhBI">watch the demo &#8599;</a>
+      </p>
     </div>
 
-    <div class="deep">
-      <p class="meta">Inside the Source Governance Engine · From My Capstone Presentation</p>
-      <h3 class="deep-title">How It Works</h3>
-      <ol class="steps">
-        <li><span class="n">1</span><strong>Highlight</strong>The journalist selects a passage in their own byline. The unit of capture is what they point at, not every named entity.</li>
-        <li><span class="n">2</span><strong>Match and infer</strong>AI matches the source against the vetted repository and infers metadata from the passage: source type, power position, on or off the record.</li>
-        <li><span class="n">3</span><strong>Save snapshot</strong>Tagged sources flow into a dashboard, where patterns surface across stories: institutional or community, recurring sources, gaps.</li>
-      </ol>
-
-      <h3 class="deep-title">What I Learned</h3>
-      <p class="deep-lead">The form factor was the problem, not the features.</p>
-      <div class="versus">
-        <div class="vs-card">
-          <p class="meta">v0 · Standalone Web App</p>
-          <p class="vs-num">26</p>
-          <p>named entities extracted from one article, every name treated as a source. Even with a polished form, going through 26 cards was tedious.</p>
-        </div>
-        <div class="vs-card vs-win">
-          <p class="meta">v1 · Browser Extension</p>
-          <p class="vs-num">4–6</p>
-          <p>sources the journalist actually used, captured by highlighting passages. The AI suggests; the journalist confirms.</p>
-        </div>
-      </div>
-      <p class="deep-note">Tools journalists actually use are infrastructure, not destinations. Standalone apps require commitment; ambient tools live alongside existing work.</p>
-
-      <h3 class="deep-title">Ethical Questions I Worked Through</h3>
-      <ol class="ethics">
-        <li><strong>Source consent doesn't transfer.</strong> A source agreed to one reporter and one story, not to a searchable database. A required consent field means the reader-facing tool cannot surface anyone who wasn't on the record.</li>
-        <li><strong>A transparency dashboard can be weaponized.</strong> "78% institutional sources" in bad-faith hands becomes "this newsroom is biased." Dashboards stay per newsroom, with reporters compared only to themselves.</li>
-        <li><strong>AI inference of source type is a power claim.</strong> The model decides whether someone is "institutional" or "an advocate," so the AI only suggests. Every suggestion is visible and editable, and the journalist makes the call.</li>
-        <li><strong>Demographic auto-tagging is possible. I chose not to ship it.</strong> The field is reserved but stays off until it has had its own design conversation.</li>
-        <li><strong>A reader-facing tool could repeat the narrowness it reveals.</strong> The next stage must show readers whose voices ground each answer, not just the answer.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section aria-labelledby="stories">
-    <h2 class="eyebrow" id="stories">Work Samples</h2>
-
-    <div class="piece">
-      <p class="meta">WABE · 2024 · Video Production</p>
-      <h3 class="piece-title">Cornerstone Society</h3>
-      <p class="piece-take">A series of staff and donor testimonial videos for WABE. I wrote every script and produced the entire shoot. Two samples: Lisa Rayam, and Laura Barbera in English and Spanish.</p>
-      <div class="media-grid">
-        <figure>
-      <div class="yt" data-id="YNasVSXXNx0">
-        <a class="yt-link" href="https://www.youtube.com/watch?v=YNasVSXXNx0" rel="noopener" aria-label="Play video: Cornerstone Society testimonial featuring Lisa Rayam">
-          <img src="https://i.ytimg.com/vi/YNasVSXXNx0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
-          <span class="play" aria-hidden="true"></span>
-        </a>
-      </div>
-          <figcaption>Lisa Rayam</figcaption>
-        </figure>
-        <figure>
-          <video class="clip" controls preload="none" playsinline poster="media/laura-barbera-poster.jpg" width="1280" height="720" aria-label="Cornerstone Society testimonial featuring Laura Barbera, English version">
-            <source src="media/laura-barbera-en.mp4" type="video/mp4">
-          </video>
-          <figcaption>Laura Barbera · <a href="media/laura-barbera-es.mp4">Spanish version ↗</a></figcaption>
-        </figure>
-      </div>
+    <div class="tool">
+      <p class="tool-stack">lovable · claude api</p>
+      <p class="tool-name">Impact Generator</p>
+      <p class="tool-take">A small newsroom's proof of impact is buried in the stories it already published, and in the real-world outcomes those stories caused. Funders pay for outcomes, and outcomes rarely make it into the published text, so turning the work into funder language is slow and gets dropped first when staff is short. The impact generator takes a newsroom's own coverage, plus an outcome if there is one, and drafts the funder-facing version: a donor note, a grant letter of inquiry, an impact summary. It works only from what the newsroom reported, and it asks for any missing detail. It never invents a number or an outcome, and it never sends.</p>
+      <p class="tool-links">
+        <a href="https://pixel-perfect-clone-67059.lovable.app">Try it &#8599;</a>
+      </p>
     </div>
 
-    <div class="piece">
-      <p class="meta">Actor's Express · 2021 · Video Production</p>
-      <h3 class="piece-title">Actor's Express and Our Community</h3>
-      <p class="piece-take">A testimonial video on the theater's place in its community. I wrote and produced it; video by Felipe Barral.</p>
-      <div class="yt" data-id="pjtIoYpQGNQ">
-        <a class="yt-link" href="https://www.youtube.com/watch?v=pjtIoYpQGNQ" rel="noopener" aria-label="Play video: Actor's Express and Our Community">
-          <img src="https://i.ytimg.com/vi/pjtIoYpQGNQ/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
-          <span class="play" aria-hidden="true"></span>
-        </a>
-      </div>
+    <div class="tool">
+      <p class="tool-stack">claude api · twilio · whisper</p>
+      <p class="tool-name">Sloane</p>
+      <p class="tool-take">Coaching and productivity apps hand everyone the same machinery, streaks, time-blocks, escalating reminders, that ignores what a specific user actually needs, so the structure ends up working against the user. Sloane is a coach that runs over text message, tailored to a specific user's needs and working style. It reads your calendar and the notes you keep in a Google Doc it treats as memory, then sends a short, oriented prompt in the morning and a reflection at night, and it takes replies as voice notes, transcribing them with Whisper so you can answer by talking. It orients around your actual day. It does not block your calendar, assign time slots, or escalate when you miss one. Building it around one real person is what forced the context and prompt decisions that make the coaching tailored to specific user needs.</p>
+      <p class="tool-links"><span class="muted">private, no link</span></p>
     </div>
 
-    <div class="piece">
-      <p class="meta">Actor's Express · 2021 · Audience Programming</p>
-      <h3 class="piece-title">Heathers: The Musical Pre-Show Talk</h3>
-      <p class="piece-take">One of the Saturday pre-show talks from the audience programming I led, giving theatergoers background on the play, the production, and how it moved from page to stage. Filmed by IGNI Productions.</p>
-      <div class="yt" data-id="sO_KQIUPchU">
-        <a class="yt-link" href="https://www.youtube.com/watch?v=sO_KQIUPchU" rel="noopener" aria-label="Play video: Heathers: The Musical pre-show talk">
-          <img src="https://i.ytimg.com/vi/sO_KQIUPchU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
-          <span class="play" aria-hidden="true"></span>
-        </a>
-      </div>
-    </div>
+  </details>
 
-    <div class="piece">
-      <p class="meta">WABE · 2024 · Audio Report</p>
-      <h3 class="piece-title">Georgia Organizations Respond to an International Humanitarian Crisis</h3>
-      <p class="piece-take">How Georgia nonprofits organized emergency relief abroad. I conducted the interviews, translated them, and chose the music.</p>
-      <a class="audio-card" href="https://www.wabe.org/georgia-organizations-provide-emergency-relief-amid-government-collapse-and-years-long-crisis-in-haiti/" rel="noopener">
-        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 0 0-9 9v6a3 3 0 0 0 3 3h2v-8H5v-1a7 7 0 0 1 14 0v1h-3v8h2a3 3 0 0 0 3-3v-6a9 9 0 0 0-9-9z"/></svg>
-        <span><strong>Listen on WABE</strong><br>90.1 FM · April 2024</span>
-      </a>
-    </div>
+  <details class="section">
+    <summary class="eyebrow rise d4">Selected Work</summary>
 
-    <div class="piece">
-      <p class="meta">Harper's Magazine · 2017 · Essay</p>
-      <h3 class="piece-title">Cave Divers</h3>
-      <p class="piece-take">A narrative essay published in Harper's Magazine.</p>
-      <a class="photo-link" href="https://harpers.org/2017/11/cave-divers/" rel="noopener" aria-label="Read Cave Divers on Harper's Magazine">
-        <img class="photo" src="media/cave-divers.jpg" alt="A cathedral and its public square on a sunny day" loading="lazy" width="1400" height="928">
-        <span class="read-tag">Read on Harper's ↗</span>
-      </a>
-    </div>
-  </section>
+    <!-- ============================================================
+         TO ADD A PIECE: copy one <article class="piece"> block below
+         and edit the four spots:
+           1. href       the link to the published piece
+           2. piece-meta  outlet · date · tag  (e.g. the haitian times · 2026 · investigation)
+           3. piece-title the headline
+           4. piece-take  one sentence on what it is or why it mattered
+         Newest piece goes at the top. Delete the two [ bracketed ] examples
+         once you've added real work.
+         ============================================================ -->
 
-  <section aria-labelledby="programs">
-    <h2 class="eyebrow" id="programs">Selected Programs</h2>
-
-    <article class="case">
-      <p class="meta">USAID · International · 2012–2015</p>
-      <h3 class="case-title">Community Engagement After a Disaster</h3>
-      <dl>
-        <dt>Need</dt><dd>A post-disaster reconstruction program had to reach the people it affected and report its progress clearly.</dd>
-        <dt>Did</dt><dd>As Communications Lead, I spoke directly with affected residents and community groups, managed one direct report, and redesigned the program's reporting process, training 8 engineers and project managers to run it.</dd>
-        <dt>Result</dt><dd>Reporting delays fell 80%, alongside three years of direct community communication in two languages.</dd>
-      </dl>
+    <article class="piece">
+      <p class="piece-meta">harper's magazine · 2017 · essay</p>
+      <p class="piece-title">Cave Divers</p>
+      <p class="piece-take">A narrative essay on seeking adventure in the caves of Haiti.</p>
+      <p class="tool-links">
+        <a href="https://harpers.org/2017/11/cave-divers/">Read &#8599;</a>
+      </p>
     </article>
 
-    <article class="case">
-      <p class="meta">DocShop South · Atlanta · Third Season</p>
-      <h3 class="case-title">Designing and Running a Cohort Program</h3>
-      <dl>
-        <dt>Need</dt><dd>Documentary filmmakers in the South need structured support to move a film forward.</dd>
-        <dt>Did</dt><dd>I co-lead a 15-week program for a cohort of 18 documentary filmmakers.</dd>
-        <dt>Result</dt><dd>The program is now in its third season.</dd>
-      </dl>
+    <article class="piece">
+      <p class="piece-meta">columbia journalism school (lede program) · 2025 · computational research</p>
+      <p class="piece-title">How 19th-Century Newspapers Gave Voice to America's First Nativist Movement</p>
+      <p class="piece-take">A data-driven, scrollytelling piece: I analyzed 3,000 newspaper articles from 1845&#8211;1855 with Python and NLP to trace how the 19th-century press amplified America's first nativist movement.</p>
+      <p class="tool-links">
+        <a href="https://nhp-2025.github.io/Know-Nothings-Project/">Read &#8599;</a>
+      </p>
     </article>
 
-    <article class="case">
-      <p class="meta">WABE, NPR and PBS Atlanta · Culture Committee</p>
-      <h3 class="case-title">Employee Engagement Inside a Public Media Organization</h3>
-      <dl>
-        <dt>Need</dt><dd>Leadership wanted a clear read on staff culture and satisfaction, and a way to act on it.</dd>
-        <dt>Did</dt><dd>As co-chair, I met monthly with the CEO and HR, ran culture focus groups, built and sent org-wide surveys, and planned quarterly company-wide events.</dd>
-        <dt>Result</dt><dd>I organized a pilot of Idea Science, a human-centered design workshop run with Stoked, for 12 staff from across the organization.</dd>
-      </dl>
+    <article class="piece">
+      <p class="piece-meta">wabe (npr/pbs atlanta) · 2024 · video script</p>
+      <p class="piece-title">WABE Cornerstone Society, Lisa Rayam</p>
+      <p class="piece-take">A membership campaign video I scripted for WABE's Cornerstone Society, featuring WABE host Lisa Rayam.</p>
+      <p class="tool-links">
+        <a href="https://youtu.be/YNasVSXXNx0">Watch &#8599;</a>
+      </p>
     </article>
 
-    <article class="case">
-      <p class="meta">AmeriCorps · Friends of Refugees · International</p>
-      <h3 class="case-title">Community Programs, Domestic and International</h3>
-      <dl>
-        <dt>New York</dt><dd>AmeriCorps Program Manager in Chinatown and the Lower East Side.</dd>
-        <dt>Abroad</dt><dd>After a major earthquake, I created and taught a Leadership for Social Change curriculum for university students at an international education nonprofit.</dd>
-        <dt>Atlanta</dt><dd>I volunteer in the Friends of Refugees English program for pre-literate refugee women.</dd>
-      </dl>
+    <article class="piece">
+      <p class="piece-meta">wabe (npr/pbs atlanta) · 2024 · interview &amp; translation</p>
+      <p class="piece-title">Georgia Organizations Provide Emergency Relief Amid Government Collapse and Years-Long Crisis in Haiti</p>
+      <p class="piece-take">For this WABE report on Georgia organizations mobilizing emergency relief during Haiti's government collapse and humanitarian crisis, I conducted the interview with the main subject, provided translation, and selected the music.</p>
+      <p class="tool-links">
+        <a href="https://www.wabe.org/georgia-organizations-provide-emergency-relief-amid-government-collapse-and-years-long-crisis-in-haiti/">Listen &#8599;</a>
+      </p>
     </article>
-  </section>
 
-  <section aria-labelledby="partners">
-    <h2 class="eyebrow" id="partners">Partnerships and Convening</h2>
-    <ul class="items">
-      <li><strong>Humans in the Loop Atlanta.</strong> I co-founded this invitation-only forum on AI in professional practice with Aimee Rinehart and Cynthia DuBose, and wrote the founding-partner proposal to Global Atlanta. It launches in January 2027.</li>
-      <li><strong>WABE stakeholder relationships.</strong> I managed relationships with 100+ Leadership Circle members, launched a members-only engagement portal, and presented results to the CEO and senior leadership every month.</li>
-      <li><strong>Actor's Express.</strong> As Director of Development, I managed up to 10 staff, contractors, and interns, wrote every grant proposal, wrote and produced the theater's testimonial videos, led its community conversations, and testified at a City of Atlanta public hearing on arts funding.</li>
-      <li><strong>Executive communications.</strong> I have written talking points for leaders at Actor's Express, WABE, and Achievement Network, and ran a communications audit and listening tour in Achievement Network's Office of the CEO.</li>
-    </ul>
-  </section>
+    <article class="piece">
+      <p class="piece-meta">the haitian times · 2016 · feature</p>
+      <p class="piece-title" lang="fr">Lutter contre la violence domestique dans la communauté haïtienne</p>
+      <p class="piece-take">A feature co-reported in French with Soraya E. Denis on domestic violence in the Haitian community, and the language and cultural barriers that keep survivors from getting help.</p>
+      <p class="tool-links">
+        <a href="https://haitiantimes.com/fr/2016/03/31/s%27attaquer-%C3%A0-la-violence-domestique-dans-la-communaut%C3%A9-ha%C3%AFtienne/">Read &#8599;</a>
+      </p>
+    </article>
+
+    <!-- in progress (not yet published) -->
+    <article class="piece">
+      <p class="piece-meta">the haitian times · ida b. wells investigative reporting fellowship, 2026 · in progress</p>
+      <p class="piece-title">USAID Caracol Investigation</p>
+      <p class="piece-take">An investigation into USAID's Caracol Northern Industrial Park and post-earthquake jobs programs in Haiti, including an on-record interview with former USAID official Paul Weisenfeld.</p>
+      <p class="tool-links"><span class="muted">in progress, no link yet</span></p>
+    </article>
+
+  </details>
+
+  <details class="section">
+    <summary class="eyebrow">Initiatives</summary>
+
+    <div class="tool">
+      <p class="tool-stack">co-founder · conversation series · in development</p>
+      <p class="tool-name">Humans in the Loop, Atlanta</p>
+      <p class="tool-take">A quarterly, invitation-only conversation series on AI, media, and the people working at the uncomfortable intersection of the two. Each session opens with a 15-minute provocation, then hands the room to an off-the-record conversation among newsroom leaders, researchers, and Atlanta's international community. Co-founded with Aimee Rinehart and Cynthia DuBose.</p>
+    </div>
+  </details>
 
   <footer>
-    <span>Updated October 2026</span>
+    <span>updated july 2026</span>
     <a href="mailto:Natalie.C.Holly@gmail.com">get in touch</a>
   </footer>
 
 </main>
+
 <script>
-  // swap a YouTube thumbnail for the player on click, so the page loads fast
-  document.querySelectorAll(".yt").forEach(function (box) {
-    box.querySelector("a").addEventListener("click", function (e) {
-      e.preventDefault();
-      var f = document.createElement("iframe");
-      f.src = "https://www.youtube-nocookie.com/embed/" + box.dataset.id + "?autoplay=1&rel=0";
-      f.title = this.getAttribute("aria-label").replace("Play video: ", "");
-      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
-      f.allowFullscreen = true;
-      box.innerHTML = "";
-      box.appendChild(f);
+  // Progressive enhancement: on narrow (mobile) screens, clamp the long
+  // "what I build" descriptions to 5 lines and add a Read more / Read less
+  // toggle, but only on paragraphs that actually overflow. With JS off, or
+  // on wider screens, every description shows in full.
+  (function () {
+    var MOBILE = "(max-width: 640px)";
+    var takes = Array.prototype.slice.call(
+      document.querySelectorAll(".build .tool-take")
+    );
+
+    function apply() {
+      var isMobile = window.matchMedia(MOBILE).matches;
+      takes.forEach(function (p) {
+        var btn = p.__moreBtn;
+        if (!btn) {
+          btn = document.createElement("button");
+          btn.className = "read-more";
+          btn.type = "button";
+          btn.addEventListener("click", function () {
+            var clamped = p.classList.toggle("clamped");
+            btn.textContent = clamped ? "Read more" : "Read less";
+          });
+          p.parentNode.insertBefore(btn, p.nextSibling);
+          p.__moreBtn = btn;
+        }
+        if (!isMobile) {
+          p.classList.remove("clamped");
+          btn.hidden = true;
+          return;
+        }
+        // Mobile: clamp, then reveal the toggle only if the text is truncated.
+        p.classList.add("clamped");
+        btn.textContent = "Read more";
+        if (p.scrollHeight > p.clientHeight + 1) {
+          btn.hidden = false;
+        } else {
+          p.classList.remove("clamped");
+          btn.hidden = true;
+        }
+      });
+    }
+
+    apply();
+    var t;
+    window.addEventListener("resize", function () {
+      clearTimeout(t);
+      t = setTimeout(apply, 150);
     });
-  });
+
+    // The descriptions live in a collapsed <details>, so they can't be measured
+    // until the section opens, so re-run then.
+    var build = document.getElementById("build-section");
+    if (build) {
+      build.addEventListener("toggle", function () {
+        if (build.open) apply();
+      });
+    }
+  })();
 </script>
 </body>
 </html>
